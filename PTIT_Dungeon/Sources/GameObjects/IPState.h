@@ -1,5 +1,6 @@
 #pragma once
 #include "../GameManager/ResourceManager.h"
+#include "Hitbox.h"
 
 class IPState {
 public:
@@ -7,7 +8,6 @@ public:
 	{
 		RUN,
 		IDLE,
-		ATTACK,
 		SNULL,
 	};
 	virtual void Init()=0;

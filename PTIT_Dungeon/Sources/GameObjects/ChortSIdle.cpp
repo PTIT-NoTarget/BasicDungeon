@@ -1,6 +1,6 @@
 #include "ChortSIdle.h"
 
-ChortSIdle::ChortSIdle(IPlayer* chort) {
+ChortSIdle::ChortSIdle(ICreep* chort) {
 	m_Chort = chort;
 }
 

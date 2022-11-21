@@ -11,5 +11,4 @@ public:
 	sf::Vector2f GetHalfSize() { return hitBox.getSize() / 2.f; }
 private:
 	HitBox& hitBox;
-	std::vector<HitBox*> m_listObj;
 };

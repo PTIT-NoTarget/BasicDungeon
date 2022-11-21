@@ -11,9 +11,7 @@ public:
 	void Reset();
 
 private:
-	bool isAlive;
 	int currentAnimation;
-	sf::View* playerView;
 	IPlayer* m_Player;
 	Animation* m_Animation[4];
 

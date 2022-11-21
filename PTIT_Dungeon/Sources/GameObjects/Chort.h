@@ -1,7 +1,7 @@
 #pragma once
-#include "IPlayer.h"
+#include "ICreep.h"
 
-class Chort : public IPlayer {
+class Chort : public ICreep{
 public:
 	Chort();
 	~Chort();

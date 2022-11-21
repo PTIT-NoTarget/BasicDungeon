@@ -34,6 +34,12 @@
     <Filter Include="Source Files\GameObjiects\Map">
       <UniqueIdentifier>{6b2946b7-eeee-4fda-bab0-d6ce1f8daca3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GameObjiects\Bullet">
+      <UniqueIdentifier>{745a7ae4-e11c-40bb-a8b0-8e628aed250f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjiects\Creep\Chort">
+      <UniqueIdentifier>{2f82186d-8fc9-4328-bb03-98abfcc43f71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PTIT_Dungeon.cpp">
@@ -81,9 +87,6 @@
     <ClCompile Include="Sources\GameObjects\Player.cpp">
       <Filter>Source Files\GameObjiects\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\GameObjects\PSAttack.cpp">
-      <Filter>Source Files\GameObjiects\Player</Filter>
-    </ClCompile>
     <ClCompile Include="Sources\GameObjects\PSIdle.cpp">
       <Filter>Source Files\GameObjiects\Player</Filter>
     </ClCompile>
@@ -102,17 +105,20 @@
     <ClCompile Include="Sources\GameObjects\Wall.cpp">
       <Filter>Source Files\GameObjiects\Map</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\GameObjects\Chort.cpp">
-      <Filter>Source Files\GameObjiects\Creep</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\GameObjects\ChortSRun.cpp">
-      <Filter>Source Files\GameObjiects\Creep</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\GameObjects\ChortSIdle.cpp">
-      <Filter>Source Files\GameObjiects\Creep</Filter>
-    </ClCompile>
     <ClCompile Include="Sources\GameObjects\ModCollisionManager.cpp">
       <Filter>Source Files\GameObjiects\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\Bullet.cpp">
+      <Filter>Source Files\GameObjiects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\ChortSRun.cpp">
+      <Filter>Source Files\GameObjiects\Creep\Chort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\ChortSIdle.cpp">
+      <Filter>Source Files\GameObjiects\Creep\Chort</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\GameObjects\Chort.cpp">
+      <Filter>Source Files\GameObjiects\Creep\Chort</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -167,9 +173,6 @@
     <ClInclude Include="Sources\GameObjects\Player.h">
       <Filter>Source Files\GameObjiects\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Sources\GameObjects\PSAttack.h">
-      <Filter>Source Files\GameObjiects\Player</Filter>
-    </ClInclude>
     <ClInclude Include="Sources\GameObjects\PSIdle.h">
       <Filter>Source Files\GameObjiects\Player</Filter>
     </ClInclude>
@@ -188,23 +191,29 @@
     <ClInclude Include="Sources\GameObjects\Wall.h">
       <Filter>Source Files\GameObjiects\Map</Filter>
     </ClInclude>
-    <ClInclude Include="Sources\GameObjects\Chort.h">
-      <Filter>Source Files\GameObjiects\Creep</Filter>
-    </ClInclude>
-    <ClInclude Include="Sources\GameObjects\IPlayer.h">
-      <Filter>Source Files\GameObjiects</Filter>
-    </ClInclude>
     <ClInclude Include="Sources\GameObjects\IPState.h">
       <Filter>Source Files\GameObjiects</Filter>
     </ClInclude>
-    <ClInclude Include="Sources\GameObjects\ChortSRun.h">
-      <Filter>Source Files\GameObjiects\Creep</Filter>
-    </ClInclude>
-    <ClInclude Include="Sources\GameObjects\ChortSIdle.h">
-      <Filter>Source Files\GameObjiects\Creep</Filter>
-    </ClInclude>
     <ClInclude Include="Sources\GameObjects\ModCollisionManager.h">
       <Filter>Source Files\GameObjiects\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\Bullet.h">
+      <Filter>Source Files\GameObjiects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\IPlayer.h">
+      <Filter>Source Files\GameObjiects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\ChortSRun.h">
+      <Filter>Source Files\GameObjiects\Creep\Chort</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\ChortSIdle.h">
+      <Filter>Source Files\GameObjiects\Creep\Chort</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\Chort.h">
+      <Filter>Source Files\GameObjiects\Creep\Chort</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\GameObjects\ICreep.h">
+      <Filter>Source Files\GameObjiects\Creep</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

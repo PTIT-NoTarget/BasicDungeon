@@ -18,10 +18,12 @@ public:
 	void Update(float deltaTime);
 	void Render(sf::RenderWindow* window);
 private:
+	float curTime;
 	sf::View view;
 	std::vector <Wall*> m_Wall;
 	ModCollisionManager m_ModCollisionManager;
 	Player m_Player;
 	Chort m_Chort;
 	TutorialMap tutorialMap;
+	sf::View playerView;
 };

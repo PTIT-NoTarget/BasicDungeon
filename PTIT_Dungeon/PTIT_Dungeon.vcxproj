@@ -138,6 +138,7 @@
     <ClCompile Include="Sources\GameManager\ResourceManager.cpp" />
     <ClCompile Include="Sources\GameManager\WindowConnector.cpp" />
     <ClCompile Include="Sources\GameObjects\Animation.cpp" />
+    <ClCompile Include="Sources\GameObjects\Bullet.cpp" />
     <ClCompile Include="Sources\GameObjects\Chort.cpp" />
     <ClCompile Include="Sources\GameObjects\ChortSIdle.cpp" />
     <ClCompile Include="Sources\GameObjects\ChortSRun.cpp" />
@@ -148,7 +149,6 @@
     <ClCompile Include="Sources\GameObjects\PSRun.cpp" />
     <ClCompile Include="Sources\GameObjects\Tutorial_Map.cpp" />
     <ClCompile Include="Sources\GameObjects\Player.cpp" />
-    <ClCompile Include="Sources\GameObjects\PSAttack.cpp" />
     <ClCompile Include="Sources\GameObjects\PSIdle.cpp" />
     <ClCompile Include="Sources\GameObjects\Wall.cpp" />
     <ClCompile Include="Sources\GameStateManager\GameStateBase.cpp" />
@@ -168,19 +168,20 @@
     <ClInclude Include="Sources\GameManager\Singleton.h" />
     <ClInclude Include="Sources\GameManager\WindowConnector.h" />
     <ClInclude Include="Sources\GameObjects\Animation.h" />
+    <ClInclude Include="Sources\GameObjects\Bullet.h" />
     <ClInclude Include="Sources\GameObjects\Chort.h" />
     <ClInclude Include="Sources\GameObjects\ChortSIdle.h" />
     <ClInclude Include="Sources\GameObjects\ChortSRun.h" />
     <ClInclude Include="Sources\GameObjects\BlockCollisionManager.h" />
     <ClInclude Include="Sources\GameObjects\GameButton.h" />
     <ClInclude Include="Sources\GameObjects\Hitbox.h" />
+    <ClInclude Include="Sources\GameObjects\ICreep.h" />
     <ClInclude Include="Sources\GameObjects\IPlayer.h" />
     <ClInclude Include="Sources\GameObjects\IPState.h" />
     <ClInclude Include="Sources\GameObjects\ModCollisionManager.h" />
     <ClInclude Include="Sources\GameObjects\PSRun.h" />
     <ClInclude Include="Sources\GameObjects\Tutorial_Map.h" />
     <ClInclude Include="Sources\GameObjects\Player.h" />
-    <ClInclude Include="Sources\GameObjects\PSAttack.h" />
     <ClInclude Include="Sources\GameObjects\PSIdle.h" />
     <ClInclude Include="Sources\GameObjects\Wall.h" />
     <ClInclude Include="Sources\GameStateManager\GameStateBase.h" />

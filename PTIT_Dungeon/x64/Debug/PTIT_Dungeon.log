@@ -1,3 +1,10 @@
-﻿  GSPlay.cpp
-D:\Game\PTIT_Dungeon\PTIT_Dungeon\Sources\GameObjects\Wall.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  PTIT_Dungeon.vcxproj -> D:\Game\PTIT_Dungeon\x64\Debug\PTIT_Dungeon.exe
+﻿  Player.cpp
+C:\Users\DangHan\source\repos\BasicDungeon\PTIT_Dungeon\Sources\GameObjects\Wall.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\DangHan\source\repos\BasicDungeon\PTIT_Dungeon\Sources\GameObjects\Player.cpp(44,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\DangHan\source\repos\BasicDungeon\PTIT_Dungeon\Sources\GameObjects\Player.cpp(51,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  GSPlay.cpp
+C:\Users\DangHan\source\repos\BasicDungeon\PTIT_Dungeon\Sources\GameObjects\Wall.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  GameStateBase.cpp
+C:\Users\DangHan\source\repos\BasicDungeon\PTIT_Dungeon\Sources\GameObjects\Wall.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  PTIT_Dungeon.vcxproj -> C:\Users\DangHan\source\repos\BasicDungeon\x64\Debug\PTIT_Dungeon.exe

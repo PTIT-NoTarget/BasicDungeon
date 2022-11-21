@@ -4,11 +4,11 @@ enum TAG
 {
 	PLAYER,
 	CHORT,
+	BULLET
 };
 class HitBox :public sf::RectangleShape{
 public:
 	HitBox();
-	HitBox(std::string link);
 	HitBox(sf::Vector2i size);
 	~HitBox();
 	void Init(sf::Vector2f velocity);
@@ -16,9 +16,9 @@ public:
 	sf::Vector2f getVelocity();
 	void setVelocity(sf::Vector2f velocity);
 
-	bool isAlive() { return m_isHealth > 0; }
-	int getHealth() { return m_isHealth; }
-	void setHealth(int alive) { m_isHealth = alive; }
+	bool isAlive();
+	int getHealth();
+	void setHealth(int health);
 	
 	TAG getTag() { return m_Tag; };
 	void SetTag(TAG tag) { m_Tag = tag; }

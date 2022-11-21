@@ -6,8 +6,6 @@ PSRun::PSRun(IPlayer* player) {
 
 void PSRun::Init() {
 	currentAnimation = 0;
-	isAlive = true;
-	playerView = new sf::View(sf::Vector2f(screenWidth / 2.f, screenHeight / 2.f), sf::Vector2f(screenWidth, screenHeight));
 	m_Animation[0] = new Animation(*DATA->getTexture("Player/Adam_run_up"), sf::Vector2i(6, 1), 0.1f);
 	m_Animation[1] = new Animation(*DATA->getTexture("Player/Adam_run_right"), sf::Vector2i(6, 1), 0.1f);
 	m_Animation[2] = new Animation(*DATA->getTexture("Player/Adam_run_down"), sf::Vector2i(6, 1), 0.1f);
@@ -16,44 +14,36 @@ void PSRun::Init() {
 
 void PSRun::Update(float deltaTime) {
 	m_Animation[currentAnimation]->Update(deltaTime);
-	/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::F)) {
-		isAlive = false;
-	}*/
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 		float x = m_Player->getHitBox()->getVelocity().x * deltaTime;
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
 			currentAnimation = 3;
 			m_Player->getHitBox()->move(-x, 0);
-			//playerView->move(-1, 0);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 			currentAnimation = 1;
 			m_Player->getHitBox()->move(x, 0);
-			//playerView->move(1, 0);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
 			currentAnimation = 0;
 			m_Player->getHitBox()->move(0, -x);
-			//playerView->move(0, -1);
 		}
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 			currentAnimation = 2;
 			m_Player->getHitBox()->move(0, x);
-			//playerView->move(0, 1);
 		}
 	}
 	else {
 		m_Player->changeNextState(IDLE);
 	}
 	m_Animation[currentAnimation]->setPosition(m_Player->getHitBox()->getPosition());
-	if (m_Player->getHitBox()->getPosition().x - screenWidth / 2 <= 0) {
-		playerView->setCenter(screenWidth / 2, screenHeight / 2);
-	}
-	else playerView->setCenter(m_Player->getHitBox()->getPosition().x, screenHeight / 2);
+	//if (m_Player->getHitBox()->getPosition().x - screenWidth / 2 <= 0) {
+	//	playerView->setCenter(screenWidth / 2, screenHeight / 2);
+	//}
+	//else playerView->setCenter(m_Player->getHitBox()->getPosition().x, screenHeight / 2);
 }
 
 void PSRun::Render(sf::RenderWindow* window) {
-	window->setView(*playerView);
 	window->draw(*m_Animation[currentAnimation]);
 }
 

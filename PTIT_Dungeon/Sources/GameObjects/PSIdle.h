@@ -11,8 +11,6 @@ public:
 	void Reset();
 
 private:
-	bool isAlive;
 	IPlayer* m_Player;
 	Animation* m_Animation;
-
 };

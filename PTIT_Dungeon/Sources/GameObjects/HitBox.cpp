@@ -4,12 +4,6 @@ HitBox::HitBox() {
 	
 }
 
-HitBox::HitBox(std::string link) {
-	this->setOutlineThickness(1.f);
-	this->setOutlineColor(sf::Color::Red);
-	this->setTexture(DATA->getTexture(link));
-}
-
 HitBox::HitBox(sf::Vector2i size) :RectangleShape((sf::Vector2f)size)
 {
 	this->setOrigin((sf::Vector2f)size / 2.f);
@@ -37,4 +31,16 @@ sf::Vector2f HitBox::getVelocity()
 void HitBox::setVelocity(sf::Vector2f velocity)
 {
 	m_Velocity = velocity;
+}
+
+bool HitBox::isAlive() {
+	return m_isHealth > 0;
+}
+
+int HitBox::getHealth() {
+	return m_isHealth;
+}
+
+void HitBox::setHealth(int health) {
+	m_isHealth = health;
 }

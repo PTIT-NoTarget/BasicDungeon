@@ -29,7 +29,6 @@ void Chort::changeNextState(IPState::STATE nextState) {
 }
 
 void Chort::Init() {
-	printf("===============");
 	m_runState->Init();
 	m_idleState->Init();
 	//m_attackState->Init();

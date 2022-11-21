@@ -1,6 +1,6 @@
 #include "ChortSRun.h"
 
-ChortSRun::ChortSRun(IPlayer* Chort) {
+ChortSRun::ChortSRun(ICreep* Chort) {
 	m_Chort = Chort;
 }
 
